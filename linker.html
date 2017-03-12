@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Linker</title>
+<style type="text/css">
+.rihter{
+	/* text-aligne:right; */
+	/* float:right; */
+	 background-color: rgb(200,200,200);
+	padding-top:5px;
+	padding-bottom:15px; 
+}
+</style>
+</head>
+<body>
+	<h3>description:</h3>
+	<p>A semantic web meta-search engine, Based on Sindice semantic
+		search engine and DBpedia sematic web repository. It is build to
+		demonstrate the capabilities of the semantic web.</p>
+	<img width="900" height="600" alt="querypage" src="./img/ex2_disamb.jpg">
+	<br>
+	<br>
+	<hr>
+	<hr>
+	<h3>architecture</h3>
+	<p>Designed to utilize already existing systems like Sindice and
+		DBpedia (with gray color) utilized by and augmented upon by linker
+		structures (with blue color).</p>
+	<img width="500" height="400" alt="architecture" src="./img/architecture.jpg">
+	<br>
+	<br>
+	<hr>
+	<hr>
+	<h3>functionality:</h3>
+	<p>Linker uses the Sindice.com API to search for terms.
+	<!-- </p>
+	<img width="500" height="400" alt="querypage" src="ex2_disamb.jpg">
+	<p> -->
+		from these terms we look out for dbpedia links and use them to query
+		dbpedia with SPARQL through its endpoint (www.dbpedia.org/sparql). 
+		<br>
+		<br> 
+		<!-- <img width="500" height="400" alt="resultspage" src="./img/results.jpg">
+		<br> --> 
+			The results are displayed whith the
+		links of reference and the comments of the relevant terms as described
+		in dbpedia.
+	</p>
+
+	<br>
+	<br>
+	<br>
+	<hr>
+	<hr>
+	<h3>example:</h3>
+	<p>
+	
+		<img  alt="searchbox1" src="./img/searchBox.jpg">
+		<div class="rihter">We ask for a term; in this case "Juventus".</div> <br><br>
+		
+	 <div style="display:inline-block">
+		<img width="500" height="400" alt="firstquery" src="./img/firstquery.jpg">
+		<img width="500" height="400" alt="disambiguation" src="./img/disambiguation.jpg">
+	</div>
+	<div class="rihter">we see that a disambiguity page (from dbpedia) is shown, where the terms can be better defined. Along with that a list of links directing to their addresses.</div>
+	
+	
+	
+	
+	<br> <hr> <br>
+	 
+		 
+	<img  alt="searchbox2" src="./img/searchbox2.jpg">
+	<div class="rihter">In the search box
+		we better define the term that we want to search by specifying the
+		dbpedia ontology and class person. </div><br><br>
+		
+		
+			 <div style="display:inline-block">
+		<img width="500" height="400" alt="newquery" src="./img/newquery.jpg">
+		<img width="500" height="400" alt="comments" src="./img/fqcomm.jpg">
+		</div>
+		<div class="rihter">With the new
+		specifications the query changes the returned results tailoring them
+		more to our request, returning People related to Juventus. </div><br> <br>
+<hr>
+		
+		<img  alt="searchbox3" src="./img/searchbox3.jpg">
+		 <div class="rihter"> Again
+		the search specifications are changed to foaf ontology (about social
+		media terms) and loolk for an agent of an organization.</div><br> <br>
+		
+		
+		 
+		<img width="500" height="400" alt="query3" src="./img/query3.jpg">
+		<div class="rihter">The hits are different. Returning mostly blogs and websites.</div><br>
+		
+
+	</p>
+
+</body>
+</html>
